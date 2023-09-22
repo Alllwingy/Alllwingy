@@ -33,8 +33,7 @@ public class TableTest {
         List<WebElement> amountOfTableColumns = driver.findElements(By.xpath("//*[@id='customers']//tr[2]/td"));
         System.out.println("amount of table columns: " + amountOfTableColumns.size());
 
-        WebElement locatorForTheRow3 = driver.findElement(By.xpath("//*[@id='customers']//tr[3]/td[1]"));
-        System.out.println("locator for the row 3: " + locatorForTheRow3.getText());
+        WebElement locatorForTheRow3 = driver.findElement(By.xpath("//*[@id='customers']//tr[3]"));
 
         WebElement locatorForTheLastColumn = driver.findElement(By.xpath("//*[@id='customers']//tr[2]/td[last()]"));
         System.out.println("locator for the last column: " + locatorForTheLastColumn.getText());
