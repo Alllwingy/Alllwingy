@@ -2,19 +2,20 @@ package Hw_04_Exceptions;
 
 public class ExceptionsPractice {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ArithmeticException {
 
-        pause();
-        calculator();
+        pause(5000);
+        calculator(9, 0);
     }
 
-    private static void calculator() throws ArithmeticException {
+    private static void calculator(int dividend, int divider) throws ArithmeticException {
 
-//        System.out.println(9 / 0);
+//        int reuslt = dividend / divider;
+//        System.out.println(result);
 
         try {
 
-            System.out.println(9 / 0);
+            System.out.println(dividend / divider);
 
         } catch (Exception e) {
 
@@ -29,7 +30,7 @@ public class ExceptionsPractice {
         }
     }
 
-    private static void pause() throws InterruptedException {
+    private static void pause(int time) throws InterruptedException {
 
 //        Thread.sleep(5000);
 
